@@ -1,0 +1,127 @@
+.add-event-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.add-event-heading {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: 20px;
+  flex-shrink: 0;
+}
+
+.add-event-form {
+  width: 500px;
+  max-height: calc(100% - 100px);
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  margin-left: 200px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.form-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-input {
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  width: 100%;
+  font-size: 1.1rem;
+  background-color: #f2f2f2;
+  height: auto;
+}
+
+.form-input:focus {
+  outline: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.role-group {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10px;
+  align-items: center;
+}
+
+.add-role-button {
+  background-color: #f2f2f2;
+  color: #333;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.add-role-button:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.1);
+}
+
+.form-submit-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-submit-button:hover {
+  background-color: #3e8e41;
+  transform: scale(1.1);
+}
+
+.leave-button-container {
+  position: absolute;
+  top: 40px;
+  right: 70px;
+}
+
+.leave-button {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.leave-button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 600px) {
+  .add-event-form {
+    width: 90%;
+    padding: 20px;
+  }
+}

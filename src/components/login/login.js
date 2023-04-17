@@ -9,7 +9,6 @@ const Login = ({setLoginUser}) => {
     const [user,setUser] = useState({
         email:'',
         password:''
-     
     });
 
     const handleChange = e => {
@@ -22,8 +21,8 @@ const Login = ({setLoginUser}) => {
         })
 
     }
-    const login =()=>{
-        axios.post("http://localhost:9002/login",user)
+    const login = ()=>{
+        axios.post("http://localhost:9002/login", user)
         .then(res => {alert(res.data.message)
             setLoginUser(res.data.volunteer)
             navigate("/homepage")})
