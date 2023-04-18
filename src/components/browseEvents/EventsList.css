@@ -1,0 +1,111 @@
+.events-list-container {
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.events-list-heading {
+    font-size: 36px;
+    margin: 0;
+}
+.back-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
+.back-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.search-form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-input,
+.search-select {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: 70%;
+    margin-right: 10px;
+}
+
+.search-select:hover {
+    transform: scale(1.1);
+}
+
+.search-select {
+    width: 25%;
+}
+
+.results-container {
+    max-height: 400px;
+    overflow-y: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.events-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+
+.event-title {
+    font-size: 18px;
+    margin: 0 0 10px;
+}
+
+.event-company,
+.event-description,
+.event-date,
+.event-time,
+.event-location,
+.event-num-volunteers {
+    font-size: 14px;
+    margin: 0 0 5px;
+}
+
+.event-roles {
+    font-size: 14px;
+}
+
+.event-roles h4 {
+    margin: 0 0 5px;
+}
+
+.event-roles ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.event-roles li {
+    margin: 0 0 5px;
+}

@@ -1,4 +1,5 @@
 {
+  "proxy": "http://localhost:9002",
   "name": "se",
   "version": "0.1.0",
   "private": true,

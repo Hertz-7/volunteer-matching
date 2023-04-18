@@ -95,6 +95,27 @@ const Event = mongoose.model('Event', EventSchema);
 app.post("/homepage", (req, res) => {
     res.send("MY API ")
 })
+
+app.get('/api/orgs', async (req, res) => {
+    try {
+      const orgs = await org.find({});
+      res.status(200).json(orgs);
+    } catch (err) {
+      console.error(err);
+      res.status(500).json({ message: 'Error fetching organizations' });
+    }
+  });
+  
+app.get('/api/events', async (req, res) => {
+    try {
+        const events = await Event.find({});
+        res.status(200).json(events);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ message: 'Error fetching events' });
+    }
+});
+
 app.post("/loginorg", (req, res) => {
     const { email, password } = req.body
     org.findOne({ email: email }).then(organisation => {
