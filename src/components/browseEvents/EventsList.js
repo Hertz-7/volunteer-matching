@@ -76,13 +76,17 @@ const EventsList = () => {
         <ul className="events-list">
           {filteredEvents.map((event) => (
             <li key={event._id} className="event-item">
-              <h3 className="event-title">{event.title}</h3>
-              <p className="event-company">Company: {getCompanyName(event.companyId)}</p>
+              <div className="event-header">
+                <h3 className="event-title">{event.title}</h3>
+                <p className="event-company">Company: {getCompanyName(event.companyId)}</p>
+              </div>
               <p className="event-description">{event.description}</p>
-              <p className="event-date">Date: {new Date(event.date).toLocaleDateString()}</p>
-              <p className="event-time">Time: {event.time}</p>
-              <p className="event-location">Location: {event.location}</p>
-              <p className="event-num-volunteers">Number of Volunteers: {event.numVolunteers}</p>
+              <div className="event-details">
+                <p className="event-date">Date: {new Date(event.date).toLocaleDateString()}</p>
+                <p className="event-time">Time: {event.time}</p>
+                <p className="event-location">Location: {event.location}</p>
+                <p className="event-num-volunteers">Volunteers: {event.numVolunteers}</p>
+              </div>
               <div className="event-roles">
                 <h4>Roles:</h4>
                 <ul>
@@ -91,7 +95,6 @@ const EventsList = () => {
                       {role.role}
                     </li>
                   ))}
-
                 </ul>
               </div>
             </li>

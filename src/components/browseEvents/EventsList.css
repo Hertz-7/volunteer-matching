@@ -2,6 +2,10 @@
     font-family: Arial, sans-serif;
     margin: 20px auto;
     max-width: 1000px;
+    background: linear-gradient(90deg, rgba(11, 22, 54, 1) 0%, rgba(46, 49, 65, 1) 100%);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
 }
 
 .header {
@@ -9,16 +13,19 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+    color: #fff;
 }
 
 .events-list-heading {
     font-size: 36px;
     margin: 0;
 }
+
 .back-button:hover {
     background-color: #d32f2f;
     transform: scale(1.1);
 }
+
 .back-button {
     background-color: #f44336;
     color: white;
@@ -44,6 +51,7 @@
     padding: 5px;
     border: 1px solid #999;
     border-radius: 4px;
+    background-color: #fff;
     width: 70%;
     margin-right: 10px;
 }
@@ -74,8 +82,21 @@
     padding: 20px;
     border-radius: 4px;
     margin-bottom: 15px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
 }
 
+.event-item:hover {
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
 .event-title {
     font-size: 18px;
@@ -90,6 +111,13 @@
 .event-num-volunteers {
     font-size: 14px;
     margin: 0 0 5px;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .event-roles {
@@ -108,4 +136,66 @@
 
 .event-roles li {
     margin: 0 0 5px;
+}
+
+.event-description {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-location,
+.event-date,
+.event-time,
+.event-num-volunteers {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.event-company {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.event-company:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.event-date,
+.event-time {
+    color: #6c757d;
+}
+
+.event-date:before,
+.event-time:before {
+    content: '\25CF';
+    margin-right: 5px;
+    color: #6c757d;
+}
+
+.event-num-volunteers {
+    color: #28a745;
+    font-weight: bold;
+}
+
+.event-location {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .event-details {
+        flex-direction: column;
+    }
+
+    .event-location,
+    .event-date,
+    .event-time,
+    .event-num-volunteers {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
 }

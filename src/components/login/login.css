@@ -9,7 +9,22 @@
     align-items: center;
     text-align: center;
 }
+.back-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
 
+.back-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+}
 .login > input {
     border-radius: 8px;
     border: 2px solid #dddfe2;

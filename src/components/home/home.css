@@ -1,0 +1,56 @@
+.home-container {
+    font-family: Arial, sans-serif;
+    background-image: url('https://source.unsplash.com/1600x900/?volunteer');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.home-title {
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.home-description {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 0 40px;
+}
+
+.home-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+}
+
+.home-button {
+    font-size: 18px;
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.organization-login {
+    background-color: #007bff;
+}
+
+.volunteer-login {
+    background-color: #28a745;
+}
+
+.home-button:hover {
+    transform: scale(1.1);
+}

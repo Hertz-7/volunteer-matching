@@ -20,7 +20,22 @@
     width: 92%;
     font-size: 1rem;
 }
+.back-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.1);
+}
 
+.back-button {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: all 0.2s ease-in-out;
+}
 .login > .button {
     background: #f04444;
     border: 1px solid #f04444;

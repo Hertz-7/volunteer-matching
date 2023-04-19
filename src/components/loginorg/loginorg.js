@@ -21,6 +21,9 @@ const Loginorg = ({setLoginUser}) => {
         })
 
     }
+    const handleBack = () => {
+        window.history.back();
+    };
     const login =()=>{
         axios.post("http://localhost:9002/loginorg",user)
         .then(res => {alert(res.data.message)
@@ -29,7 +32,8 @@ const Loginorg = ({setLoginUser}) => {
     }
     return (
         <div className='login'>
-            <h1>Login Organisation</h1>
+            <h1>Login Organisation<button className="back-button" onClick={handleBack}>Back</button>
+            </h1>
             <input type="text"  name="email" value={user.email}   placeholder="Enter your Email" onChange={handleChange}></input> 
             <input type="password"  name="password" value={user.password}  placeholder="Enter your Password" onChange={handleChange}></input>
             <div className='button' onClick={login}>Login</div>
